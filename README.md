@@ -1,2 +1,4 @@
-# mario-jump-game
-Jogo simples do Mario desenvolvido com HTML, CSS e JavaScript
+<h1>Jogo Mario Jump</h1>
+
+<img src="https://i.imgur.com/3Sifwz6.png" alt="mario-game">
+
