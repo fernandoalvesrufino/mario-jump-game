@@ -43,6 +43,14 @@
   position: absolute; 
 }
 
+#pontuacao {
+  position: absolute; 
+  top: 10px;
+  left: 85%;
+  font-family: 'Silkscreen';
+}
+
+
 @keyframes animacao-nuvens {
   from {
     right: -500px;
