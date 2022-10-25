@@ -1,6 +1,8 @@
 const mario = document.getElementById("mario");
 const pipe = document.getElementById("pipe");
 const gameover = document.getElementById("gameover");
+const pontuacao = document.getElementById("pontuacao");
+let pontuacaoAtual = 0
 
 
 function jump () {
@@ -17,6 +19,9 @@ let loop = setInterval(function () {
 
   const pipePosition = parseInt(window.getComputedStyle(pipe).getPropertyValue("left"));
   const marioPosition = parseInt(window.getComputedStyle(mario).getPropertyValue("bottom"));
+  pontuacaoAtual = pontuacaoAtual + 0.09;
+  const info = "Pontuação: " + pontuacaoAtual.toFixed(0); 
+  pontuacao.textContent = info
 
   if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
 
@@ -30,6 +35,7 @@ let loop = setInterval(function () {
     mario.style.marginLeft = "40px";
     
     gameover.style.marginLeft = "35%"
+    
     clearInterval(loop);
   }
 
