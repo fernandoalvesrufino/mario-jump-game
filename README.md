@@ -32,6 +32,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Mario Jump é um jogo onde é possível pular obstáculos. O jogo termina quando você colide com algum obstáculo. O jogo lembra um pouco o jogo do dinossauro do Google. 
 
+- [Acesse o projeto finalizado, online](https://fernandoalvesrufino.github.io/mario-jump-game/)
+
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT.
