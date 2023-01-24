@@ -2,11 +2,21 @@ const mario = document.getElementById("mario");
 const pipe = document.getElementById("pipe");
 const gameover = document.getElementById("gameover");
 const pontuacao = document.getElementById("pontuacao");
-
+const record = document.getElementById("record");
 const atualizar = document.getElementById("atualizar");
 
 let pontuacaoAtual = 0
+let pontuacaoMaxima = localStorage.getItem("maxScore") || 0;
 
+const numberToString = parseInt(pontuacaoMaxima)
+record.textContent = "Record: " + numberToString.toFixed(0)
+
+function updateScore(pontos) {
+  if (pontos > pontuacaoMaxima) {
+    pontuacaoMaxima = pontos;
+    localStorage.setItem("maxScore", pontuacaoMaxima);
+  }
+}
 
 function jump () {
   if (mario.classList != "jump"){
@@ -23,7 +33,7 @@ let loop = setInterval(function () {
   const pipePosition = parseInt(window.getComputedStyle(pipe).getPropertyValue("left"));
   const marioPosition = parseInt(window.getComputedStyle(mario).getPropertyValue("bottom"));
   pontuacaoAtual = pontuacaoAtual + 0.09;
-  const info = "Pontuação: " + pontuacaoAtual.toFixed(0); 
+  const info = "Pontuação: " + pontuacaoAtual.toFixed(1); 
   pontuacao.textContent = info
     
 
@@ -40,6 +50,8 @@ let loop = setInterval(function () {
     
     gameover.style.marginLeft = "35%"
     atualizar.style.marginLeft = "48%"
+
+    updateScore(pontuacaoAtual);
 
     clearInterval(loop);
   }
