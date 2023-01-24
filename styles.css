@@ -43,7 +43,29 @@
   position: absolute; 
 }
 
+#atualizar {
+  width: 50px;
+  margin-left: 100%;
+  position: absolute;
+  margin-top: 350px;
+  border: 0px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.45s ease
+}
+
+#atualizar:hover{
+  transform: scale(1.1);
+}
+
 #pontuacao {
+  position: absolute; 
+  top: 27px;
+  left: 85%;
+  font-family: 'Silkscreen';
+}
+
+#record {
   position: absolute; 
   top: 10px;
   left: 85%;
