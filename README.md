@@ -24,7 +24,8 @@ Um jogo onde é possível pular obstáculos. O jogo termina quando você colide 
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- HTML e CSS
+- HTML
+- CSS
 - JavaScript 
 - Git e Github
 
