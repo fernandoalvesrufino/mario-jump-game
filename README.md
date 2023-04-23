@@ -15,7 +15,7 @@
   <img alt="Mario jump" src="https://i.imgur.com/3Sifwz6.png" width="100%">
 </p>
 
-##🚀 Technologies
+## 🚀 Technologies
 This project was developed with the following technologies:
 
 - HTML
