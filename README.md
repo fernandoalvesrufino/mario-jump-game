@@ -24,6 +24,7 @@ This project was developed with the following technologies:
 - Git and Github
 
 ## 💻 Project
+
 Mario Jump is a game where you can jump over obstacles. The game ends when you collide with an obstacle. The game is similar to Google's dinosaur game.
 
 [Access the completed project online.](https://fernandoalvesrufino.github.io/mario-jump-game/)
