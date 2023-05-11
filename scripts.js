@@ -36,7 +36,6 @@ let loop = setInterval(function () {
   const info = "Pontuação: " + pontuacaoAtual.toFixed(1); 
   pontuacao.textContent = info
     
-
   if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
 
     pipe.style.animation = "none";
